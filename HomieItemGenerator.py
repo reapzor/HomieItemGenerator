@@ -259,7 +259,7 @@ class HomieHabItemGenerator:
                 file_lines.append(item_node["node_header"])
                 for node_property in item_node["node_properties"]:
                     file_lines.append(node_property)
-            with open(generated_item["item"].name + ".item", "w") as file:
+            with open(generated_item["item"].name + ".items", "w") as file:
                 file.write("\n".join(file_lines))
                 file.write("\n")
 

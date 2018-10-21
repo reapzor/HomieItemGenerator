@@ -30,10 +30,10 @@ sandy_dht1_dht_node.add_properties(
         "icon": "temperature"
     },
     {
-        "property_name": "Temperature_F",
-        "property_path": "temperature_f",
+        "property_name": "Temperature_C",
+        "property_path": "temperature_c",
         "value_type": "Number",
-        "display_text": "Temperature [%.1f °F]",
+        "display_text": "Temperature [%.1f °C]",
         "icon": "temperature"
     }
 )
