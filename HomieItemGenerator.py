@@ -88,7 +88,7 @@ class HomieHabItem:
         self.group_name = build_name(self.location_group_name, device_id)
         self.settings_group_name = build_name(self.group_name, "properties")
         self.root_path = root_path
-        self.path = build_mqtt_path(root_path, location_name, device_id)
+        self.path = build_mqtt_path(root_path, location_name, device_id.lower())
         self.item_nodes = []
         self._generate_device_properties()
 

@@ -10,19 +10,19 @@ Group g_Sandy_DHT1_DHT
 
 
 // ---- Item Properties ------------------------------------------------------------------------------------------------
-String Sandy_DHT1_name "Device Name [%s]" <keyring> (g_Sandy_DHT1, g_Sandy_DHT1_properties) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/DHT1/$name:state:default]" }
-String Sandy_DHT1_mac "MAC [%s]" <text> (g_Sandy_DHT1, g_Sandy_DHT1_properties) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/DHT1/$mac:state:default]" }
-String Sandy_DHT1_ip "IP [%s]" <text> (g_Sandy_DHT1, g_Sandy_DHT1_properties) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/DHT1/$localip:state:default]" }
-Number Sandy_DHT1_signal "Signal [%.1f%%]" <network> (g_Sandy_DHT1, g_Sandy_DHT1_properties) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/DHT1/$stats/signal:state:default]" }
-Number Sandy_DHT1_uptime "Uptime [JS(uptime.js):%s]" <time> (g_Sandy_DHT1, g_Sandy_DHT1_properties) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/DHT1/$stats/uptime:state:default]" }
-String Sandy_DHT1_fw_name "FW Name [%s]" <text> (g_Sandy_DHT1, g_Sandy_DHT1_properties) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/DHT1/$fw/name:state:default]" }
-String Sandy_DHT1_fw_version "FW Version [%s]" <text> (g_Sandy_DHT1, g_Sandy_DHT1_properties) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/DHT1/$fw/version:state:default]" }
-String Sandy_DHT1_current_config "Config JSON [%s]" <settings> (g_Sandy_DHT1, g_Sandy_DHT1_properties) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/DHT1/$implementation/config:state:default]" }
-String Sandy_DHT1_ota_enabled "OTA Enabled [%s]" <wind> (g_Sandy_DHT1, g_Sandy_DHT1_properties) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/DHT1/$implementation/ota/enabled:state:default]" }
-String Sandy_DHT1_online "Online [%s]" <poweroutlet_us> (g_Sandy_DHT1, g_Sandy_DHT1_properties) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/DHT1/$online:state:default]" }
+String Sandy_DHT1_name "Device Name [%s]" <keyring> (g_Sandy_DHT1, g_Sandy_DHT1_properties) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/dht1/$name:state:default]" }
+String Sandy_DHT1_mac "MAC [%s]" <text> (g_Sandy_DHT1, g_Sandy_DHT1_properties) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/dht1/$mac:state:default]" }
+String Sandy_DHT1_ip "IP [%s]" <text> (g_Sandy_DHT1, g_Sandy_DHT1_properties) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/dht1/$localip:state:default]" }
+Number Sandy_DHT1_signal "Signal [%.1f%%]" <network> (g_Sandy_DHT1, g_Sandy_DHT1_properties) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/dht1/$stats/signal:state:default]" }
+Number Sandy_DHT1_uptime "Uptime [JS(uptime.js):%s]" <time> (g_Sandy_DHT1, g_Sandy_DHT1_properties) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/dht1/$stats/uptime:state:default]" }
+String Sandy_DHT1_fw_name "FW Name [%s]" <text> (g_Sandy_DHT1, g_Sandy_DHT1_properties) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/dht1/$fw/name:state:default]" }
+String Sandy_DHT1_fw_version "FW Version [%s]" <text> (g_Sandy_DHT1, g_Sandy_DHT1_properties) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/dht1/$fw/version:state:default]" }
+String Sandy_DHT1_current_config "Config JSON [%s]" <settings> (g_Sandy_DHT1, g_Sandy_DHT1_properties) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/dht1/$implementation/config:state:default]" }
+String Sandy_DHT1_ota_enabled "OTA Enabled [%s]" <wind> (g_Sandy_DHT1, g_Sandy_DHT1_properties) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/dht1/$implementation/ota/enabled:state:default]" }
+String Sandy_DHT1_online "Online [%s]" <poweroutlet_us> (g_Sandy_DHT1, g_Sandy_DHT1_properties) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/dht1/$online:state:default]" }
 
 // ---- Node Properties ------------------------------------------------------------------------------------------------
 // ---- Node: DHT --- Path: sensor/dht ---------------------------------------------------------------------------------
-Number Sandy_DHT1_DHT_Humidity "Humidity [%.1f%%]" <humidity> (g_Sandy_DHT1, g_Sandy_DHT1_DHT) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/DHT1/sensor/dht/humidity:state:default]" }
-Number Sandy_DHT1_DHT_Temperature_F "Temperature [%.1f °F]" <temperature> (g_Sandy_DHT1, g_Sandy_DHT1_DHT) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/DHT1/sensor/dht/temperature_f:state:default]" }
-Number Sandy_DHT1_DHT_Temperature_C "Temperature [%.1f °C]" <temperature> (g_Sandy_DHT1, g_Sandy_DHT1_DHT) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/DHT1/sensor/dht/temperature_c:state:default]" }
+Number Sandy_DHT1_DHT_Humidity "Humidity [%.1f%%]" <humidity> (g_Sandy_DHT1, g_Sandy_DHT1_DHT) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/dht1/sensor/dht/humidity:state:default]" }
+Number Sandy_DHT1_DHT_Temperature_F "Temperature [%.1f °F]" <temperature> (g_Sandy_DHT1, g_Sandy_DHT1_DHT) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/dht1/sensor/dht/temperature_f:state:default]" }
+Number Sandy_DHT1_DHT_Temperature_C "Temperature [%.1f °C]" <temperature> (g_Sandy_DHT1, g_Sandy_DHT1_DHT) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/dht1/sensor/dht/temperature_c:state:default]" }
