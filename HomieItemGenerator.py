@@ -117,20 +117,10 @@ class HomieHabItem:
 
 class HomieHabItemGenerator:
 
-    def __init__(self, broker_name):
+    def __init__(self, broker_name, homie_items):
         self.broker_name = broker_name
-        self.homie_items = []
+        self.homie_items = homie_items
         self.generated_homie_items = None
-
-    def add_item(self, **kwargs):
-        homie_item = HomieHabItem(**kwargs)
-        self.homie_items.append(homie_item)
-        return homie_item
-
-    def homie_item(self, name):
-        for homie_item in self.homie_items:
-            if homie_item.device_id == name:
-                return homie_item
 
     def generate_items(self):
         self.generated_homie_items = []
@@ -263,6 +253,39 @@ class HomieHabItemGenerator:
                 file.write("\n".join(file_lines))
                 file.write("\n")
 
-    def save_files(self):
+    def save_items(self):
         self.save_item_locations_file()
         self.save_item_files()
+
+
+class HomieHabSitemapGenerator:
+
+    def __init__(self, broker_name, homie_items):
+        self.broker_name = broker_name
+        self.homie_items = homie_items
+        self.generated_homie_sitemaps = None
+
+
+class HomieHabGenerator:
+
+    def __init__(self, broker_name):
+        self.broker_name = broker_name
+        self.homie_items = []
+
+    def add_item(self, **kwargs):
+        homie_item = HomieHabItem(**kwargs)
+        self.homie_items.append(homie_item)
+        return homie_item
+
+    def homie_item(self, name):
+        for homie_item in self.homie_items:
+            if homie_item.device_id == name:
+                return homie_item
+
+    def generate_items(self):
+        item_generator = HomieHabItemGenerator(self.broker_name, self.homie_items)
+        item_generator.generate_items()
+        item_generator.save_items()
+
+    def generate_sitemaps(self):
+        pass

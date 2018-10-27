@@ -1,7 +1,7 @@
 
 from HomieItemGenerator import *
 
-generator = HomieHabItemGenerator("AutomationServer")
+generator = HomieHabGenerator("AutomationServer")
 
 #####################
 #  Sandy DHT1 Item  #
@@ -26,19 +26,18 @@ sandy_dht1_dht_node.add_properties(
         "property_name": "Temperature_F",
         "property_path": "temperature_f",
         "value_type": "Number",
-        "display_text": "Temperature [%.1f °F]",
+        "display_text": "Temperature [%.1f F]",
         "icon": "temperature"
     },
     {
         "property_name": "Temperature_C",
         "property_path": "temperature_c",
         "value_type": "Number",
-        "display_text": "Temperature [%.1f °C]",
+        "display_text": "Temperature [%.1f C]",
         "icon": "temperature"
     }
 )
 
 
 generator.generate_items()
-generator.save_files()
 

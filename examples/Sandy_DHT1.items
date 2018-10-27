@@ -24,5 +24,5 @@ String Sandy_DHT1_online "Online [%s]" <poweroutlet_us> (g_Sandy_DHT1, g_Sandy_D
 // ---- Node Properties ------------------------------------------------------------------------------------------------
 // ---- Node: DHT --- Path: sensor/dht ---------------------------------------------------------------------------------
 Number Sandy_DHT1_DHT_Humidity "Humidity [%.1f%%]" <humidity> (g_Sandy_DHT1, g_Sandy_DHT1_DHT) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/dht1/sensor/dht/humidity:state:default]" }
-Number Sandy_DHT1_DHT_Temperature_F "Temperature [%.1f °F]" <temperature> (g_Sandy_DHT1, g_Sandy_DHT1_DHT) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/dht1/sensor/dht/temperature_f:state:default]" }
-Number Sandy_DHT1_DHT_Temperature_C "Temperature [%.1f °C]" <temperature> (g_Sandy_DHT1, g_Sandy_DHT1_DHT) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/dht1/sensor/dht/temperature_c:state:default]" }
+Number Sandy_DHT1_DHT_Temperature_F "Temperature [%.1f F]" <temperature> (g_Sandy_DHT1, g_Sandy_DHT1_DHT) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/dht1/sensor/dht/temperature_f:state:default]" }
+Number Sandy_DHT1_DHT_Temperature_C "Temperature [%.1f C]" <temperature> (g_Sandy_DHT1, g_Sandy_DHT1_DHT) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/dht1/sensor/dht/temperature_c:state:default]" }
