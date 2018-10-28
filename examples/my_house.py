@@ -40,4 +40,5 @@ sandy_dht1_dht_node.add_properties(
 
 
 generator.generate_items()
+generator.generate_sitemaps()
 
