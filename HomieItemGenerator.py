@@ -82,10 +82,10 @@ HOMIE_PROPERTIES = [
         "sitemap_type": "Text"
     },
     {
-        "property_name": "online",
-        "property_path": "$online",
+        "property_name": "state",
+        "property_path": "$state",
         "value_type": "String",
-        "display_text": "Online [%s]",
+        "display_text": "State [%s]",
         "icon": "poweroutlet_us",
         "transform": "default",
         "sitemap_type": "Text"
@@ -95,6 +95,7 @@ HOMIE_PROPERTIES = [
 PROPERTIES_SITEMAPPING = {
     "Device Details": [
         "name",
+        "state",
         "uptime",
         "fw_name",
         "fw_version",
@@ -104,8 +105,7 @@ PROPERTIES_SITEMAPPING = {
     "Network": [
         "ip",
         "signal",
-        "mac",
-        "online"
+        "mac"
     ]
 }
 

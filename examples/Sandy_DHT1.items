@@ -19,7 +19,7 @@ String Sandy_DHT1_fw_name "FW Name [%s]" <text> (g_Sandy_DHT1, g_Sandy_DHT1_prop
 String Sandy_DHT1_fw_version "FW Version [%s]" <text> (g_Sandy_DHT1, g_Sandy_DHT1_properties) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/dht1/$fw/version:state:default]" }
 String Sandy_DHT1_current_config "Config JSON [%s]" <settings> (g_Sandy_DHT1, g_Sandy_DHT1_properties) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/dht1/$implementation/config:state:default]" }
 String Sandy_DHT1_ota_enabled "OTA Enabled [%s]" <wind> (g_Sandy_DHT1, g_Sandy_DHT1_properties) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/dht1/$implementation/ota/enabled:state:default]" }
-String Sandy_DHT1_online "Online [%s]" <poweroutlet_us> (g_Sandy_DHT1, g_Sandy_DHT1_properties) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/dht1/$online:state:default]" }
+String Sandy_DHT1_state "State [%s]" <poweroutlet_us> (g_Sandy_DHT1, g_Sandy_DHT1_properties) { autoupdate="false", mqtt="<[AutomationServer:homie/Sandy/dht1/$state:state:default]" }
 
 // ---- Node Properties ------------------------------------------------------------------------------------------------
 // ---- Node: DHT --- Path: sensor/dht ---------------------------------------------------------------------------------

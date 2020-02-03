@@ -5,6 +5,7 @@ sitemap Sandy_DHT1 label="Sandy DHT1 Item" {
 	// ---- Item Properties -----------------------------------------------------------------------------------------------
 	Frame label="Device Details" {
 		Text item=Sandy_DHT1_name 
+		Text item=Sandy_DHT1_state 
 		Text item=Sandy_DHT1_uptime 
 		Text item=Sandy_DHT1_fw_name 
 		Text item=Sandy_DHT1_fw_version 
@@ -15,7 +16,6 @@ sitemap Sandy_DHT1 label="Sandy DHT1 Item" {
 		Text item=Sandy_DHT1_ip 
 		Text item=Sandy_DHT1_signal 
 		Text item=Sandy_DHT1_mac 
-		Text item=Sandy_DHT1_online 
 	}
 	// ---- Node: DHT --- Path: sensor/dht --------------------------------------------------------------------------------
 	Frame label="DHT" {
